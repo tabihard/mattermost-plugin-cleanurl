@@ -1,9 +1,9 @@
 {
-    "id": "com.tabihard.mattermost-plugin-template",
-    "name": "Hello World",
-    "description": "Mattermost server plugin template based on the official Hello World tutorial.",
-    "homepage_url": "https://github.com/tabihard/mattermost-plugin-template",
-    "support_url": "https://github.com/tabihard/mattermost-plugin-template/issues",
+    "id": "com.tabihard.mattermost-plugin-cleanurl",
+    "name": "Clean URL",
+    "description": "投稿されたメッセージ内のURLから utm_* などのトラッキングパラメータを自動的に削除するMattermostサーバープラグイン。",
+    "homepage_url": "https://github.com/tabihard/mattermost-plugin-cleanurl",
+    "support_url": "https://github.com/tabihard/mattermost-plugin-cleanurl/issues",
     "version": "0.1.0",
     "min_server_version": "6.0.0",
     "server": {
@@ -14,5 +14,16 @@
             "darwin-arm64": "server/dist/plugin-darwin-arm64",
             "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         }
+    },
+    "settings_schema": {
+        "settings": [
+            {
+                "key": "ExtraTrackingParams",
+                "display_name": "追加のトラッキングパラメータ",
+                "type": "text",
+                "help_text": "デフォルトの一覧に加えて削除したいクエリパラメータ名をカンマ区切りで指定します（例: ref,igshid）。大文字・小文字は区別しません。",
+                "default": ""
+            }
+        ]
     }
 }

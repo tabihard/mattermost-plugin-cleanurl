@@ -1,4 +1,4 @@
-PLUGIN_ID := com.tabihard.mattermost-plugin-template
+PLUGIN_ID := com.tabihard.mattermost-plugin-cleanurl
 DIST_DIR := dist
 BUNDLE_DIR := $(DIST_DIR)/$(PLUGIN_ID)
 BUNDLE_NAME := $(PLUGIN_ID).tar.gz

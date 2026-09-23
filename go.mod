@@ -1,4 +1,4 @@
-module github.com/tabihard/mattermost-plugin-template
+module github.com/tabihard/mattermost-plugin-cleanurl
 
 go 1.26.7
 
