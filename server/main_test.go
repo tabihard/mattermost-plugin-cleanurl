@@ -50,6 +50,11 @@ func TestCleanMessage(t *testing.T) {
 			message: "https://example.com?utm_source=x&utm_medium=y",
 			want:    "https://example.com",
 		},
+		{
+			name:    "strips google ads and adwords-style dm/att tracking params",
+			message: "https://example.com/product?dm_cam=1&dm_grp=2&dm_ad=3&dm_kw=4&dm_net=adwords&att_gcid=a&att_gbid=b&att_wbid=c&gad_source=1&gad_campaignid=5&gbraid=x",
+			want:    "https://example.com/product",
+		},
 	}
 
 	for _, tt := range tests {
