@@ -21,6 +21,12 @@
 - `twclid`, `ttclid`（Twitter/X, TikTok広告）
 - `vero_id`, `mkt_tok`, `_hsenc`, `_hsmi`（マーケティングツール系）
 - `ref_src`, `ref_url`, `spm`, `scid`, `si`, `s_kwcid`, `wt.mc_id`
+- `gbraid`, `wbraid`, `gad_source`, `gad_campaignid`（Google広告系）
+- `dmai`, `dm_cam`, `dm_grp`, `dm_ad`, `dm_kw`, `dm_net`（ディスプレイ/DSP広告系）
+- `_ga`, `_gl`, `_gac`（Google Analytics）
+- `ef_id`, `s_cid`（Adobe）、`wickedid`, `oly_anon_id`, `oly_enc_id`（Olytics等）
+- `fb_action_ids`, `fb_source`（Facebook）
+- `pk_campaign`, `pk_kwd`, `pk_source`, `pk_medium`, `mtm_campaign`, `mtm_source`, `mtm_medium`, `mtm_keyword`（Matomo）
 
 管理コンソールの設定画面（*System Console > Plugins > Clean URL*）から、`ExtraTrackingParams` にカンマ区切りで追加のパラメータ名を指定できます（例: `ref,igshid`、大文字小文字は区別しません）。
 
